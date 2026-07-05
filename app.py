@@ -10,7 +10,7 @@ from io import StringIO
 from datetime import datetime, timedelta
 
 # --- 1. DESIGN & CSS ---
-st.set_page_config(page_title="Aktier Sverige Trading Terminal", layout="wide")
+st.set_page_config(page_title="Investerings Terminal", layout="wide")
 
 st.markdown("""
     <style>
@@ -96,7 +96,7 @@ if 'rows' not in st.session_state: st.session_state.rows = 5
 if 'weights_map' not in st.session_state: st.session_state.weights_map = {}
 
 # --- 4. NAVIGATION ---
-st.title("Aktier Sverige Trading Terminal")
+st.title("Investerings Terminal")
 t1, t2, t3, t4, t5 = st.tabs(
     ["📂 Portföljanalys", "🔮 Risk-Simulering", "🧮 Positionskalkylator", "🕵️‍♂️ Insynshandel", "📊 System-Simulator"])
 
